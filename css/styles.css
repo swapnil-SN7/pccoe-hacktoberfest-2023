@@ -77,7 +77,11 @@ p{
 #pad{
     margin-right: 10px  ;
 }
-
+/* .row{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+    gap: 10px;
+} */
 .cover{
     display: flex;
     justify-content: center;
@@ -146,11 +150,40 @@ p{
     font-weight: bold;
 }
 
+.stats::before{
+    position: absolute;
+    content: "";
+    /* background: url("../images/stats.jpg") no-repeat center center/cover;
+     */
+     background-color: #00080f;
+  z-index: 0;
+    opacity: 0.75;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.stats{
+    width: 100%;
+    height: 450px;
+    padding: 3% 15%;
+    
+    background-color: #fff;
+     position: relative; 
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+}
 #global-stats{
     padding: 7% 15%;
     background-color: #fff;
      position: relative; 
-
+    
 }
 
 .global-stats-row{
@@ -655,7 +688,7 @@ p{
 .btndesign{
     color: #FFD700;
 
-    border: 6px solid #FFD700;
+    border: 6px solid #615f54;
     opacity: 0.58;
     border-radius:15px;
     padding: 15px 25px;
@@ -667,11 +700,35 @@ p{
     filter: drop-shadow(0 0 15px #bac81c) drop-shadow(0 0 50px #b6db3e) contrast(2) brightness(2);
     transition: .5s;
 }
+.btndesign a{
+    text-decoration: none;
+    
+}
+.stats_heading{
+    padding: 2px;
+    margin: 10px;
+}
+.glass_card{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 260px;
+    border: 2px solid red;
+    background: rgba( 34, 35, 55, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8px );
+-webkit-backdrop-filter: blur( 8px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
 .btndesign:hover{
     /* color: black; */
     color: #FFD700;
 
-    border: 6px solid #FFD700;
+    border: 6px solid #cecdc8;
     opacity: 1;
     /* background-color: #c4b880; */
 
@@ -702,16 +759,14 @@ p{
 }
 
 #global-stats{
+    /* border: 2px solid red; */
     padding: 7% 15%;
     background-color: #fff;
      position: relative; 
+     
 
 }
 
-.global-stats-row{
-    text-align: center;
-    padding: 5%;
-}
 
 .icon{
     color: #072540;
