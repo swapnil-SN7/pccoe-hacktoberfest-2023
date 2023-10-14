@@ -57,7 +57,7 @@ p{
 }
 
 .nav-link{
-    font-size: 1.4rem;
+    
     font-weight:  bold; 
     color: white !important;
 }
@@ -329,7 +329,7 @@ h2 {
     margin: 20px 0;
     border-radius: 6px;
     align-self: center;
-    width: 98vw;
+    width: 100vw;
 }
 .timeline__event:nth-child(2n + 1) {
     flex-direction: row-reverse;
