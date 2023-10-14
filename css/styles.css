@@ -173,7 +173,7 @@ p{
      position: relative; 
 }
 
-.row{
+.header-row{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
