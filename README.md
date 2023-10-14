@@ -1,6 +1,8 @@
-# hacktoberfest-2023
+<div align="center">
+   <h1> Welcome to PCCOE-ACM Hacktoberfest 2023! 🎉</h1> 
+</div>
 
-<<div align="center">
+<div align="center">
     <img width="1322" alt="Screenshot 2023-10-14 at 8 06 28 AM" src="https://github.com/pccoe-acm/Pccoe-Hacktoberfest-2023/assets/31288352/11c7dafb-c7c9-4fde-892b-c1eb8b8f2a76">
     <h1 style="margin-top:0px" align="center"> PCCOE - ACM | Hacktoberfest 2023 ✨🚀 </h1>
 </div>
@@ -21,9 +23,7 @@
 
 ---
 
-<div align="center">
-    # Welcome to PCCOE-ACM Hacktoberfest 2023! 🎉
-</div>
+
 
 <div align="center">
     Get ready for an exciting journey into the world of open source, tech challenges, and collaborative coding. Whether you're a beginner or an experienced developer, our event has something for everyone. Join us to make a meaningful contribution to the open-source community. ✨🚀
