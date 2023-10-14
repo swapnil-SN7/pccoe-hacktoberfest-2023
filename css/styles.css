@@ -54,7 +54,7 @@ body{
 /* tpewriting effect ends here */
 
 /* 
-add here if any improment for the cards */
+add here if any improvment for the cards */
 
 .card{
     
@@ -65,6 +65,15 @@ backdrop-filter: blur( 5.5px );
 -webkit-backdrop-filter: blur( 5.5px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* adding the breakpoint to the card */
+@media (min-width:991px) and (max-width:1498px){
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
 }
 
 h1{
@@ -350,7 +359,7 @@ h2 {
     content: "";
     width: 2px;
     height: 100%;
-    background: #f6a4ec;
+    background: #98d1e1;
     position: absolute;
     top: 0%;
     left: 50%;
@@ -363,7 +372,7 @@ h2 {
     content: "";
     width: 100%;
     height: 2px;
-    background: #f6a4ec;
+    background: #a4e8f6;
     position: absolute;
     right: 0;
     z-index: -1;
@@ -377,7 +386,7 @@ h2 {
     line-height: 1.4;
     text-transform: uppercase;
     font-weight: 600;
-    color: #b56dd2;
+    color: #6db9d2;
     letter-spacing: 1.5px;
 }
 .timeline__event__content {
@@ -388,10 +397,10 @@ h2 {
     border-radius: 0 6px 6px 0;
 }
 .timeline__event__date {
-    color: #f6a4ec;
+    color: #f0e8ef;
     font-size: 1.5rem;
     font-weight: 600;
-    background: #9251ac;
+    background: #518fac;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -403,11 +412,11 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #9251ac;
+    color: #5195ac;
     padding: 20px;
     align-self: center;
     margin: 0 20px;
-    background: #f6a4ec;
+    background: #98dee8;
     border-radius: 100%;
     width: 40px;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
@@ -422,7 +431,7 @@ h2 {
     content: "";
     width: 2px;
     height: 100%;
-    background: #f6a4ec;
+    background: #24a2cc;
     position: absolute;
     top: 0%;
     z-index: -1;
@@ -434,7 +443,7 @@ h2 {
     content: "";
     width: 100%;
     height: 2px;
-    background: #f6a4ec;
+    background: #4392d2;
     position: absolute;
     left: 0%;
     z-index: -1;
@@ -449,18 +458,18 @@ h2 {
     background: #555ac0;
 }
 .timeline__event--type2 .timeline__event__date {
-    color: #87bbfe;
+    color: #e3e8ee;
     background: #555ac0;
 }
 .timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:before, .timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:after {
-    background: #87bbfe;
+    background: #f0f2f5;
 }
 .timeline__event--type2 .timeline__event__icon {
-    background: #87bbfe;
+    background: #e0e2e5;
     color: #555ac0;
 }
 .timeline__event--type2 .timeline__event__icon:before, .timeline__event--type2 .timeline__event__icon:after {
-    background: #87bbfe;
+    background: #e3e8ed;
 }
 .timeline__event--type2 .timeline__event__title {
     color: #555ac0;
@@ -520,21 +529,6 @@ h2 {
     .timeline__event:nth-child(2n + 1) .timeline__event__icon {
         border-radius: 6px 6px 0 0;
         margin: 0;
-   }
-}
-@keyframes fillLeft {
-    100% {
-        right: 100%;
-   }
-}
-@keyframes fillTop {
-    100% {
-        top: 100%;
-   }
-}
-@keyframes fillLeftOdd {
-    100% {
-        left: 100%;
    }
 }
 
