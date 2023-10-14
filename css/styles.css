@@ -4,6 +4,7 @@ html {
 
   }
 
+
 #title {
     background-color: #0c0c0c;
     color: #f6f9fb;
@@ -15,6 +16,55 @@ body{
 
 .container-fluid{
     padding: 3% 15% 7%;  
+}
+
+/* adding the margin to the typewriter div for making it center */
+  .typewriter{
+    margin-bottom: 2rem;
+  }
+
+
+/* adding the typewriter effect  */
+
+.typewriter h2 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.8s steps(30, end) infinite,
+      blink-caret .7s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(241, 222, 17) }
+  }
+
+/* tpewriting effect ends here */
+
+/* 
+add here if any improment for the cards */
+
+.card{
+    
+box-shadow: 9px 16px 11px 5px rgba(150, 150, 150, 0.24);
+background: rgba(130, 207, 237, 0.35);
+
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 h1{
@@ -214,7 +264,7 @@ span:hover{
     padding: 2% 2%;
 }
 .card{
-    height: 250px;
+    height: 300px;
     width: 400px;
 }
 
